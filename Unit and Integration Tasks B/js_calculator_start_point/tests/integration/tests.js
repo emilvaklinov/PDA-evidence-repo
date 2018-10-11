@@ -90,6 +90,4 @@ describe('calculator functionality', function() {
     element(by.css('#operator_equals')).click();
     expect(running_total.getAttribute('value')).to.eventually.equal('NaN')
   })
-
-
 });
