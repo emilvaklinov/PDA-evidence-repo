@@ -67,7 +67,7 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('2.5')
   })
 
-  it('can give expected output for very large results', function(){
+  it('can give expected output for large results', function(){
     running_total = element(by.css('#running_total'))
     element(by.css('#number9')).click();
     element(by.css('#number9')).click();
@@ -82,12 +82,12 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('98999901')
   })
 
-  it('', function(){
-    running_total = element(by.css('#running_total'))
-    element(by.css('#number5')).click();
-    element(by.css('#operator_divide')).click();
-    element(by.css('#number0')).click();
-    element(by.css('#operator_equals')).click();
-    expect(running_total.getAttribute('value')).to.eventually.equal('NaN')
-  })
+  // it('', function(){
+  //   running_total = element(by.css('#running_total'))
+  //   element(by.css('#number5')).click();
+  //   element(by.css('#operator_divide')).click();
+  //   element(by.css('#number0')).click();
+  //   element(by.css('#operator_equals')).click();
+  //   expect(running_total.getAttribute('value')).to.eventually.equal('NaN')
+  // })
 });
